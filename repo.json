@@ -1,0 +1,146 @@
+{
+  "bootstraps": [
+    {
+      "label": "Rootful",
+      "items": [
+        {
+          "cfver": "1700",
+          "uri": "https://raw.githubusercontent.com/SowaDarek/palera1n-repo-alt/main/bootstrap/bootstrap-1700.tar.zst"
+        },
+        {
+          "cfver": "1800",
+          "uri": "https://raw.githubusercontent.com/SowaDarek/palera1n-repo-alt/main/bootstrap/bootstrap-1800.tar.zst"
+        },
+        {
+          "cfver": "1900",
+          "uri": "https://raw.githubusercontent.com/SowaDarek/palera1n-repo-alt/main/bootstrap/bootstrap-1900.tar.zst"
+        },
+        {
+          "cfver": "2000",
+          "uri": "https://raw.githubusercontent.com/SowaDarek/palera1n-repo-alt/main/bootstrap/bootstrap-2000.tar.zst"
+        }
+      ]
+    },
+    {
+      "label": "Rootless",
+      "items": [
+        {
+          "cfver": "1800",
+          "uri": "https://raw.githubusercontent.com/SowaDarek/palera1n-repo-alt/main/bootstrap/ssh/1800/bootstrap-ssh-iphoneos-arm64.tar.zst"
+        },
+        {
+          "cfver": "1900",
+          "uri": "https://raw.githubusercontent.com/SowaDarek/palera1n-repo-alt/main/bootstrap/ssh/1900/bootstrap-ssh-iphoneos-arm64.tar.zst"
+        },
+        {
+          "cfver": "2000",
+          "uri": "https://raw.githubusercontent.com/SowaDarek/palera1n-repo-alt/main/bootstrap/ssh/1900/bootstrap-ssh-iphoneos-arm64.tar.zst"
+        },
+        {
+          "cfver": "2100",
+          "uri": "https://raw.githubusercontent.com/SowaDarek/palera1n-repo-alt/main/bootstrap/ssh/1900/bootstrap-ssh-iphoneos-arm64.tar.zst"
+        },
+        {
+          "cfver": "2200",
+          "uri": "https://raw.githubusercontent.com/SowaDarek/palera1n-repo-alt/main/bootstrap/ssh/1900/bootstrap-ssh-iphoneos-arm64.tar.zst"
+        },
+        {
+          "cfver": "2300",
+          "uri": "https://raw.githubusercontent.com/SowaDarek/palera1n-repo-alt/main/bootstrap/ssh/1900/bootstrap-ssh-iphoneos-arm64.tar.zst"
+        },
+        {
+          "cfver": "2400",
+          "uri": "https://raw.githubusercontent.com/SowaDarek/palera1n-repo-alt/main/bootstrap/ssh/1900/bootstrap-ssh-iphoneos-arm64.tar.zst"
+        },
+        {
+          "cfver": "2500",
+          "uri": "https://raw.githubusercontent.com/SowaDarek/palera1n-repo-alt/main/bootstrap/ssh/1900/bootstrap-ssh-iphoneos-arm64.tar.zst"
+        }
+      ]
+    }
+  ],
+  
+  "managers": [
+    {
+      "label": "Rootful",
+      "items": [
+        {
+          "name": "Sileo",
+          "uri": "https://raw.githubusercontent.com/SowaDarek/palera1n-repo-alt/main/apps/rootful/Sileo/sileo.deb",
+          "icon": "https://raw.githubusercontent.com/SowaDarek/palera1n-repo-alt/main/apps/rootful/Sileo/sileo.png",
+          "filePaths": [
+            "/Applications/Sileo.app"
+          ]
+        },
+        {
+          "name": "Zebra",
+          "uri": "https://raw.githubusercontent.com/SowaDarek/palera1n-repo-alt/main/apps/rootful/Zebra/zebra.deb",
+          "icon": "https://raw.githubusercontent.com/SowaDarek/palera1n-repo-alt/main/apps/rootful/Zebra/zeeb.png",
+          "filePaths": [
+            "/Applications/Zebra.app"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Rootless",
+      "items": [
+        {
+          "name": "Sileo",
+          "uri": "https://raw.githubusercontent.com/SowaDarek/palera1n-repo-alt/main/apps/rootless/Sileo/sileo.deb",
+          "icon": "https://raw.githubusercontent.com/SowaDarek/palera1n-repo-alt/main/apps/rootless/Sileo/sileo.png",
+          "filePaths": [
+            "/var/jb/Applications/Sileo.app"
+          ]
+        },
+        {
+          "name": "Zebra",
+          "uri": "https://raw.githubusercontent.com/SowaDarek/palera1n-repo-alt/main/apps/rootless/Zebra/zebra.deb",
+          "icon": "https://raw.githubusercontent.com/SowaDarek/palera1n-repo-alt/main/apps/rootless/Zebra/zeeb.png",
+          "filePaths": [
+            "/var/jb/Applications/Zebra.app"
+          ]
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "label": "Rootful",
+      "repositories": [
+        {
+          "uri": "https://repo.palera.in",
+          "suite": "./",
+          "component": ""
+        },
+        {
+          "uri": "https://ellekit.space",
+          "suite": "./",
+          "component": ""
+        }
+      ],
+      "packages": [
+        "libkrw0-tfp0"
+      ]
+    },
+    {
+      "label": "Rootless",
+      "repositories": [
+        {
+          "uri": "https://repo.palera.in",
+          "suite": "./",
+          "component": ""
+        },
+        {
+          "uri": "https://ellekit.space",
+          "suite": "./",
+          "component": ""
+        }
+      ],
+      "packages": [
+        "libkrw0-tfp0",
+        "dhinakg-keyring"
+      ]
+    }
+  ]
+}
